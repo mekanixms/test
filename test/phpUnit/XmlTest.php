@@ -205,7 +205,7 @@ class XmlTest extends PHPUnit_Framework_TestCase
         $a("//TARGET")->before("<before/>")->after($a->doc->createElement("after"))->append("<append/>")->prepend("<prepend/>");
         $this->assertEquals($a("/root")->xml(), "<root><before></before><TARGET><prepend></prepend><append></append></TARGET><after></after></root>", "failed");
 
-        $a = new Xms\Core\Xml;
+        $a = new Xms\Core\Xml("");
         $c = "<r><EXTERNAL/>TEXT<?PI some instructions?><CONTENT/></r>";
         $b = new Xms\Core\Xml($c);
         $b->q("/r/node()");
