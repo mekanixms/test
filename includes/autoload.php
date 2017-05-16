@@ -7,5 +7,6 @@ $loader = new Psr4Autoloader();
 $loader->register();
 // register the base directories for the namespace prefix
 $loader->addNamespace('Xms\Core', __DIR__ . '/Xms/Core');
+$loader->addNamespace('PHPUnit\Framework', __DIR__ . '/PHPUnit/Framework');
 $loader->addNamespace('Test', __DIR__ . '../test/phpUnit');
 $loader->addNamespace('Third\Party', __DIR__ . '/Third/Party');
