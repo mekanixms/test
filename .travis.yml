@@ -11,6 +11,6 @@ before_script:
     # php module
     #- echo "extension = xsl.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
 
-install: composer install
-script: vendor/bin/phpunit
-#script: phpunit
+#install: composer install
+#script: vendor/bin/phpunit
+script: phpunit
