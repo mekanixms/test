@@ -4,7 +4,7 @@
     convertWarningsToExceptions="false"
 >
     <php>
-        <ini name="error_reporting" value="~E_NOTICES"/>
+        <ini name="error_reporting" value="true"/>
     </php>
     <testsuites>
         <testsuite name="Xms">
